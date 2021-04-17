@@ -1,0 +1,84 @@
+{% extends "blog/base.html"%}
+{% load static %}
+
+{% block title %}Registration{% endblock %}
+
+{%block content%}
+
+<br><br>
+{% if message %}
+<div class="alert alert-danger text-center  alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message}}
+</div>
+{% endif %}
+<!-- <div class="container-fluid"> -->
+   <!-- <div class="col-sm-12 card shadow-lg p-5 mt-5 mb-5 mb-8 mx-auto"> -->
+    <div class="container m-5 text-center">
+       <h1>Please Register here</h1>
+    </div>
+     <div class="form-container mr-5 bg-dark" id="login_form">
+        <form action="/detail/" method="POST" >
+            {% csrf_token %}
+            <div class="container">
+                <span class="icon"><i class="far fa-user-circle"></i></span>
+                <label>First Name</label>
+                <input type="text" class="form-group" id="FirstName" placeholder="Enter first name" name="FirstName" required>
+            </div>
+
+            <div class="container">
+                <span class="icon"><i class="far fa-user-circle"></i></span>
+                <label >Last Name</label>
+                <input type="text" class="form-group" id="LastName" placeholder="Enter LastName" name="LastName" required>
+            </div>
+
+            
+            <div class="container">
+                <span class="icon"><i class="fas fa-user-lock "></i></span>
+                <label class="form-group">password</label>
+                <input type="password" class="form-group" id="password" placeholder="Enter password" name="password" required>
+            </div>
+
+           
+            <div class="container">
+                <span class="icon"><i class="fas fa-at"></i></span>
+                <label class="form-group m-3">Email</label>
+                <input type="email" class="form-group " id="Email" placeholder="Enter Email" name="Email" required>
+            </div>
+
+            
+            <div class="container">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <label class="form-group m-2">country</label>
+                <input type="text" class="form-group pr-2" id="country" placeholder="Enter country" name="country" required>
+            </div>
+
+            
+            <div class="container">
+                <span class="icon"><i class="far fa-question-circle"></i></span>
+                <label class="form-group mr-3">state</label>
+                <input type="text" class="form-group m-3" id="state" placeholder="Enter state" name="state" required>
+            </div>
+
+            
+            <div class="container">
+                <span class="icon"><i class="fas fa-city"></i></span>
+                <label class="form-group m-3">city</label>
+                <input type="text" class="form-group" id="city" placeholder="Enter city" name="city" required>
+            </div>
+
+            
+            <div class="container">
+                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                <label class="form-group m-3">pincode</label>
+                <input type="text" class="form-group" id="pincode" placeholder="Enter pincode" name="pincode" required>
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-primary" name="register">Register</button>
+        </form>
+    </div>
+ <!-- </div>
+</div> -->
+<!-- </div> -->
+{% endblock %}

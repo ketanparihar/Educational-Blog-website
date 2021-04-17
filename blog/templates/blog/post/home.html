@@ -1,0 +1,482 @@
+<!Doctype html>
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+<head>
+  <link href="static/css/blog.css" rel="stylesheet">
+</head>
+{%block content%}
+<br><br><br>
+<header>
+  <div id="demo" class="carousel slide " data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <img class="img-fluid w-100" src="static/image/img4.jpg" alt="Los Angeles alt">
+        <div class="carousel-caption" style="padding-bottom: 30%;">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid w-100" src="static/image/img5.jpg" alt="Chicago">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+          <div class="socials">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid w-100" src="static/image/img6.jpg" alt="New York">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</header>
+
+<div class="container-fluid">
+    <marquee>covid-19 ! The disease can spread from person to person through small droplets from the nose or mouth when a person with COVID-19 coughs or exhales. People can also catch COVID-19 by touching objects or surfaces (where droplets land), then touching their eyes, nose or mouth.</marquee>
+</div>
+
+<div class="container-fluid bg-light mt-3  pt-3 pb-5" style="background-image: url('static/image/aww.jpg');">
+  <div class="container-fluid bg-white mt-3  pt-3 pb-5">
+  <section>
+    <div class="container pt-5 pb-5 mt-3 mb-3">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card text-black bg-white mb-3">
+            <img src="static/image/cardimg1.jpg" class="card-img-top" alt="No image">
+            <div class="card-body">
+              <h5 class="card-title">C++ blog</h5>
+              <p class="card-text">C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 ">
+          <div class="card text-black bg-white mb-3">
+            <img src={% static "image//cardimg2.jpg" %} class="card-img-top  " alt="No image">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Python is an interpreted, high-level and general-purpose programming language. Python's design philosoph</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card text-black bg-white mb-3">
+            <img src={% static "image\cardimg3.jpg" %} class="card-img-top" alt="No image">
+            <div class="card-body">
+              <h5 class="card-title">Django Framework</h5>
+              <p class="card-text">Django is a Python-based free and open-source web framework that follows the model-template-views architectural pattern.</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card text-black bg-white mb-3">
+            <img src={% static "image\cardimg4.jpg" %} class="card-img-top " alt="No image">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap4</h5>
+              <p class="card-text">The world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="text-center text-capitalize pt-3 pb-3  mb-3">
+      <h1>About us</h1>
+      <hr class="w-25 mx-auto">
+    </div>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <ul class="m-0 p-5">
+            <tr>
+            <li>
+              <h4>Name: Ketan parihar</h3>
+            </li>
+            <li>
+              <h4>github: Ketanparihar</h4>
+            </li>
+            <li>
+              <h4>LinkedIn: Ketanparihar39</h4>
+            </li>
+            <li>
+              <h4>contact: 7024044990</h4>
+            </li>
+            </tr>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3">
+          <img  src=" {% static 'image\work2.png' %}" alt="No Image" width="300vm" height="300vm"
+            class="responsive">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3">
+          <img  src=" {% static 'image\work.png' %}" alt="No Image" width="300vm" height="300vm"
+            class="responsive">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <ul class="m-0 p-5">
+            <tr>
+            <li>
+              <h4>Name: Ketan parihar</h3>
+            </li>
+            <li>
+              <h4>github: Ketanparihar</h4>
+            </li>
+            <li>
+              <h4>LinkedIn: Ketanparihar39</h4>
+            </li>
+            <li>
+              <h4>contact: 7024044990</h4>
+            </li>
+            </tr>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5 mt-5 mb-5 bg-white ">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="text-body">
+            <div class="text-center">
+              <i class="fas fa-pencil-ruler fa-5x "></i>
+            </div>
+            <h1 class="text-center">Stratagy</h1>
+            <p class="text-center">Depending on your current situation, it is important to draw a strategy that allows
+              you to achieve your
+              goals. Not everything works for everyone!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="text-body">
+            <div class="text-center">
+              <!-- <i class="fas fa-pencil-ruler fa-5x "></i> -->
+              <img class="image-fluid" src="static/image/symbol-triangle-system-integration.jpg" alt="STRATAGY">
+            </div>
+            <h1 class="text-center">Brand Narrative</h1>
+            <p class="text-center">Find a meaning, a tone and a narrative with which, we not only achieve
+              differentiation, but also
+              represent you and speak about your product and / or service
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="text-body">
+            <div class="text-center">
+              <i class="fas fa-pencil-ruler fa-5x "></i>
+            </div>
+            <h1 class="text-center">Processes</h1>
+            <p class="text-center">There is no online and offline world, today there is only one thing: the world! Your
+              customers are
+              constantly moving from one to the other. Like you!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- chat bot -->
+  <div class="chat_icon ">
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </div>
+
+  <section>
+    <div class="container pt-5 pb-20 bg-white  mt-5 mb-5 pl-5 pr-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h3 class="mb-4 text-center">Submit your Projects!</h3>
+          <div class="text-body">
+
+            <p class="mb-3 text-center md:text-left">Would you like to contribute your own projects to Crio Projects
+              Hub? Share your project with us and we will work with you to feature it here.</p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-success text-center md:text-left pl-5 pr-5 mt-5 mb-5 " type="button">submit
+                project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12  pb-5">
+          <img class="img-fluid w-10"
+            src="static/image/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg"
+            alt="NO IMAGE">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container bg-white pl-5 pr-10 mb-5 shadow-lg" id="cardContainer">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card  shadow-lg mb-4 mt-4 bg-white" style="width: 15rem;">
+            <img src="static/image/card1.png" alt="this is our service">
+            <div class="card-body text-center">
+              <p>This is all your website
+              <p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card shadow mb-4 mt-4 bg-dark h-10vh" style="width: 15rem">
+            <img src="static/image/card1.png" alt="this is our service">
+            <div class="card-body text-center">
+              <p>This is all your website
+              <p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card shadow  mb-4 mt-4 bg-dark" style="width: 15rem;">
+            <img src="static/image/card1.png" alt="this is our service">
+            <div class="card-body text-center">
+              <p>This is all your website
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+      <span>
+        <li class='fas fa-atom' style='font-size:24px'>
+        <h5 style="padding-right: 1rem">Latest tecnology</h5></li>
+      </span>
+      <div class="row" ">
+        <div class="col-lg-2 col-md-2 col-sm-6">
+          <img src="static/image/home_ml_python.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_machine_learning.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blue_prism.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blockchain_python.png" alt="no image">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_bitcoin.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ai_python.png">
+            <p>Block Chain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+      <span>
+        <li class='fas fa-atom' style='font-size:24px'>
+        <h5 style="padding-right: 1rem">Latest tecnology</h5></li>
+      </span>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ml_python.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_machine_learning.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blue_prism.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blockchain_python.png" alt="no image">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_bitcoin.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ai_python.png">
+            <p>Block Chain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container bg-white mt-5">
+      <span>
+        <li class='fas fa-atom' style='font-size:24px'>
+          <h5>Web Tecnologies</h5></li>
+      </span>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ml_python.png">
+           <p>Block Chain</p>>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_machine_learning.png">
+           <p>Block Chain</p>>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blue_prism.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blockchain_python.png" alt="no image">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_bitcoin.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ai_python.png">
+            <p>Block Chain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container bg-white mt-5">
+      <span>
+        <li class='fas fa-atom' style='font-size:24px'>
+        <h5>Latest tecnology</h5></li>
+      </span>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ml_python.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_machine_learning.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blue_prism.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_blockchain_python.png" alt="no image">
+          <h3>Block Chain</h1>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_bitcoin.png">
+            <p>Block Chain</p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <img src="static/image/home_ai_python.png">
+            <p>Block Chain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container  mt-5 " style="background-image: url('static/image/aww.jpg');">
+      <div class="row">
+        <div class="col-md-6 p-1 text-center">
+          <h3 class="text mt-5 animation fadeUp" style="animation-delay: 1s;">Hey,kese ho</h3>
+          <p class="animation fadeIn" style="animation-delay: 2s;">Machine learning is the study of computer algorithms
+            that improve automatically through experience and by the use of data. It is seen as a part of artificial
+            intelligence</p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="static/image/vector-creator.png" alt="vector-creator">
+        </div>
+        <!-- <div class="container"> -->
+        <div class="col-md-7 mb-4">
+          <div class="view overlay z-depth-1-half">
+            <img loading="lazy" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="card-img-top"
+              alt="">
+            <div class="mask rgba-white-light"></div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section>
+    <div class="container mt-5 p-5">
+      <div class="col-md-7 mb-4">
+        <div class="view overlay z-depth-3-half">
+          <video controls>
+            <source src="static/image/work.mp4">
+          </video>
+          <!-- <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="card-img-top" alt=""> -->
+          <!-- <div class="mask rgba-white-light"></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% include "blog/fotter.html" %}
+{% endblock %}
+</div>
